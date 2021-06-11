@@ -1,4 +1,5 @@
 <?php
+    //Connection request for database
     require_once 'C:\xampp\htdocs\Manas Web Tech Project\connection.php';
     session_start();
     if(!isset($_SESSION['username'])){
