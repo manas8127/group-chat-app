@@ -1,5 +1,5 @@
-<?php 
-
+<?php
+	require_once 'C:\xampp\htdocs\Manas Web Tech Project\connection.php';
 	//error_reporting( error_reporting() & ~E_NOTICE );
 session_start();
 	$uname = $_SESSION['username'];
@@ -7,11 +7,11 @@ session_start();
 
 	function mynl2br($msg): string
     {
-   		return strtr($msg, array("\r\n" => '<br />', "\r" => '<br />', "\n" => '<br />')); 
-	} 
+   		return strtr($msg, array("\r\n" => '<br />', "\r" => '<br />', "\n" => '<br />'));
+	}
 	//print_r($msg);
 
-	$conn = mysqli_connect('localhost', 'root', '', 'chatbox');
+
 // Check connection
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());

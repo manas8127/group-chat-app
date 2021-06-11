@@ -1,9 +1,10 @@
-<?php 
-    session_start(); 
-    if(!isset($_SESSION['username'])){ 
+<?php
+    require_once 'C:\xampp\htdocs\Manas Web Tech Project\connection.php';
+    session_start();
+    if(!isset($_SESSION['username'])){
 
          header("location: loginform.php");
-} 
+}
 
  ?>
 
@@ -13,7 +14,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-   
+
     <title>Chat Box</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -41,11 +42,11 @@
                             }
                         }
                     }
-    </script>	
+    </script>
 </head>
 <body>
 
-                    
+
 <div class="container bootstrap snippet">
     <div class="row">
         <div class="col-md-4 col-md-offset-4">
@@ -56,15 +57,17 @@
                     </div>
                     <div class="portlet-widgets">
                         <div class="btn-group">
-                            
+
                                     <a href="logout.php" type="submit">LOG OUT </a>
-                           
+
                             <!-- <ul class="dropdown-menu" role="menu">
+                                <li><a href="#"><i class="fa fa-circle text-green"></i> Online</a>
                                 <li><a href="#"><i class="fa fa-circle text-green"></i> Online</a>
                                 </li>
                                 <li><a href="#"><i class="fa fa-circle text-orange"></i> Away</a>
                                 </li>
                                 <li><a href="#"><i class="fa fa-circle text-red"></i> Offline</a>
+                                </li>
                                 </li>
                             </ul> -->
                         </div>
@@ -82,7 +85,7 @@
                         <div class="row">
                             <div class="col-lg-12">
                             <p class="text-center text-muted small">
-                                <?php 
+                                <?php
                                     echo "Today is " . date("d-m-Y") . "<br>";
                                  ?>
                             </p>
@@ -103,15 +106,15 @@
                                         <img class="media-object img-circle" src="http://lorempixel.com/30/30/people/1/" alt="">
                                     </a> -->
                                     <div class="media-body" id="chatlogs">
-            
+
                                         <!-- <h4 class="media-heading">Jane Smith
                                             <span class="small pull-right">12:23 PM</span>
                                         </h4>
                                         <p>Hi, I wanted to make sure you got the latest product report. Did Roddy get it to you?</p> -->
-                                        
+
                                     </div>
                                     <div id="typing_on">No one is typing.</div>
-                                   
+
 
                                 </div>
                             </div>
@@ -127,7 +130,7 @@
                             <div class="form-group" style="text-align: center;">
                                 <button onclick="submitChat()" id="send" name="send" class="btn btn-default" >SEND</button>
                                 <!-- <button id="del" name="del" class="btn btn-default pull-right" onclick="myAjax()">CLEAR CHAT</button><br><br> -->
-                                <!-- <audio id="audiotag1" src="fb.mp3" preload="auto"></audio>  
+                                <!-- <audio id="audiotag1" src="fb.mp3" preload="auto"></audio>
  -->
                                 <div class="clearfix"></div>
                             </div>
@@ -138,13 +141,13 @@
         </div>
         <!-- /.col-md-4 -->
     </div>
-</div>                
+</div>
 
 <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 <script type="text/javascript">
 	   //Your custom script goes here
-                    
-                
+
+
 </script>
 </body>
 </html>

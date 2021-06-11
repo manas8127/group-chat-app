@@ -3,7 +3,7 @@
 	session_destroy();
 
 	echo "<script>alert('You have logged out.');
-		window.location.replace('http://localhost:8080/chatterbox/loginform.php');
+		window.location.replace('loginform.php');
 	</script>"
 
  ?>

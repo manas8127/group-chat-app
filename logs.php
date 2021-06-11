@@ -1,4 +1,5 @@
-<?php 
+<?php
+require_once 'C:\xampp\htdocs\Manas Web Tech Project\connection.php';
 	session_start();
 	error_reporting( error_reporting() & ~E_NOTICE );
 	$uname = $_SESSION['username'];
@@ -9,7 +10,7 @@ else
     echo "";
 	//echo $msg;
 
-	$conn = mysqli_connect('localhost', 'root', '', 'chatbox');
+
 // Check connection
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());

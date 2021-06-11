@@ -1,5 +1,5 @@
-<?php 
-
+<?php
+require_once 'C:\xampp\htdocs\Manas Web Tech Project\connection.php';
 ?>
 
 <!DOCTYPE html>
